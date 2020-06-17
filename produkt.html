@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkt - Raj Modelov</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/cart.js"></script>
+</head>
+<body>
+    <div id="button-up">
+        <a href="#hore"><i class="fas fa-arrow-circle-up"></i></a>
+    </div>
+    <header id="hore">
+        <a href="index.html">
+            <img src="img/logo.jpeg" alt="Logo" />
+        </a>
+    </header>
+    <nav>
+        <div>
+            <div class="burgerMenu">
+                <i class="fas fa-bars" onclick="nav()"></i>
+            </div>
+            <ul id="nav">
+                <li><a href="index.html">Úvod</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="kosik.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </nav>
+    <main>
+        <section id="product-short-info">
+            <div>
+                <img src="img/Brawa_47114.jpg" alt="Brawa_47114" />
+            </div>
+            <div>
+                <h1>Brawa 47114</h1>
+                <h2>Plošinový vozeň</h2>
+                <div id="product-prize">49,90€</div>
+                <div class="availability">
+                    <span>Na sklade</span>
+                    <div>
+                        <div class="green-dot"></div>
+                        <div class="red-dot display-none"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="product-size-buy">
+            <div>
+                <label for="cart-amount"  onclick="editCartInput(-1)">-</label>
+                <input class="cart-amount" id="cart-amount" type="number" value="1" min="1" readonly />
+                <label for="cart-amount" onclick="editCartInput(1)">+</label>
+                <a href="kosik.html">Pridať do košíka</a>
+            </div>
+        </section>
+
+        <section id="product-description">
+            <h1>Produkt & špecifikácia</h1>
+            <div>
+                <div class="description">
+                    <br />
+                    <span>Plošinový vozeň DB typu Rmms, epocha IV, inventárne číslo: 31 83 395 9 085-9</span>
+                    <ul>
+                        <li>Železný podvozok a kolieska</li>
+                        <li>Precízne urobený popis a nafarbenie</li>
+                        <li>Filigránový podvozok</li>
+                        <li>Brzdový systém je tvorený z viacerých častí s brzdovými čeľusťami </li>
+                        <li>Pohyblivé klanice</li>
+                    </ul>
+                </div>
+                <div class="specification">
+                    <table>
+                        <tr>
+                            <td>Výrobca:</td>
+                            <td>Brawa</td>
+                        </tr>
+                        <tr>
+                            <td>Číslo produktu: </td>
+                            <td>47114</td>
+                        </tr>
+                        <tr>
+                            <td>Mierka: </td>
+                            <td>HO</td>
+                        </tr>
+                        <tr>
+                            <td>Železničná spoločnosť: </td>
+                            <td>DB</td>
+                        </tr>
+                        <tr>
+                            <td>Epocha:</td>
+                            <td>IV</td>
+                        </tr>
+                        <tr>
+                            <td>Napájací systém:</td>
+                            <td>DC</td>
+                        </tr>
+                        <tr>
+                            <td>Dĺžka cez nárazníky: </td>
+                            <td>161,4 mm</td>
+                        </tr>
+                        <tr>
+                            <td>Spriahlo:</td>
+                            <td>Šachta NEM 362 z KK kinematikov</td>
+                        </tr>
+                        <tr>
+                            <td>Cena u výrobcu:</td>
+                            <td>52,90€</td>
+                        </tr>
+                        <tr>
+                            <td>Dostupné:</td>
+                            <td>Q2/2018</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="footer-top">
+            <div>
+                <h6>Sociálne siete</h6>
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""> <i class="fab fa-youtube"></i></a>
+            </div>
+
+            <div>
+                <h6>Možnosti platby</h6>
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+
+        </section>
+
+        <section id="footer-bottom">
+            <p>&#169; 2020 Marcel Doliňák</p>
+        </section>
+    </footer>
+</body>
+</html>
