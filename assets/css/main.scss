@@ -692,6 +692,31 @@ body {
                 }
             }
         }
+
+        #sitemap {
+            width: 80%;
+            margin: 0 auto;
+
+            h1 {
+                margin: 20px 0;
+            }
+
+            ul {
+                width: 80%;
+                margin: 0 auto;
+                
+                li{
+                    a {
+                        text-decoration: none;
+                        color: black;
+
+                        &:hover {
+                            color: #FF671F;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     footer {

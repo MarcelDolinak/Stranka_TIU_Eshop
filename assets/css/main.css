@@ -747,6 +747,29 @@ body main #product-description > div .specification table tr td {
   padding: 5px 0;
 }
 
+body main #sitemap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body main #sitemap h1 {
+  margin: 20px 0;
+}
+
+body main #sitemap ul {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body main #sitemap ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+body main #sitemap ul li a:hover {
+  color: #FF671F;
+}
+
 body footer {
   z-index: 1;
   display: -ms-grid;
